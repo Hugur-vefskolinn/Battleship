@@ -16,6 +16,7 @@ describe("checkForShip", function () {
   };
     expect(checkForShip(player, [9,9])).to.be.false;
   });
+
   it(" should correctly report no ship at a given players coordinate", function () {
 
     player = {
@@ -27,4 +28,18 @@ describe("checkForShip", function () {
     };
       expect(checkForShip(player, [0,0])).to.be.true;
     });
+
+    it(" should correctly report no ship at a given players coordinate", function () {
+
+      player = {
+         ships: [
+          {
+            locations:[[0, 0],[0, 1]]
+          }
+        ]
+      };
+        expect(checkForShip(player, [0,1])).to.be.true;
+        expect(checkForShip(player, [0,0])).to.be.true;
+        expect(checkForShip(player, [9,9])).to.be.false;
+      });
 });
