@@ -79,3 +79,20 @@ describe("checkForShip", function () {
         expect(ship.damage[0]).to.deep.equal([0, 0]);
     	});
     });
+
+    describe("fire", function () {
+      var fire = require("../game_logic/shop_methods").fire;
+    
+      it("should record damage on a given players ship at a given coordinate", function () {
+        var player = {
+          ships: [
+            {
+              locations: [[0, 0]],
+              damage:[]
+            }
+          ]
+        };
+        fire(player, [0, 0]);
+        expect(player.ships[0].damage[0])
+        .to.deep.equal([0, 0])	
+        });
