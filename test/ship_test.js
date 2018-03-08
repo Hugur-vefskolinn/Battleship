@@ -92,7 +92,8 @@ describe("checkForShip", function () {
             }
           ]
         };
-        fire(player, [0, 0]);
-        expect(player.ships[0].damage[0])
-        .to.deep.equal([0, 0])	
+        fire(player, [9, 9]);
+			  expect(player.ships[0].damage[0])
+			  .to.be.empty	
         });
+      });
