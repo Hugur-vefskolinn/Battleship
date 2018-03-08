@@ -29,7 +29,7 @@ describe("checkForShip", function () {
       expect(checkForShip(player, [0,0])).to.be.true;
     });
 
-    it(" should correctly report no ship at a given players coordinate", function () {
+    it("should should handle ships located at more then one coordinate", function () {
 
       player = {
          ships: [
