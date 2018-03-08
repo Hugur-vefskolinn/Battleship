@@ -26,7 +26,7 @@ describe("checkForShip", function () {
         }
       ]
     };
-      expect(checkForShip(player, [0,0])).to.be.true;
+      expect(checkForShip(player, [0,0])).to.deep.equal(player.ships[0]);
     });
 
     it("should should handle ships located at more then one coordinate", function () {
