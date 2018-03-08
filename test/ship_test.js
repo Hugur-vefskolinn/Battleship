@@ -81,7 +81,7 @@ describe("checkForShip", function () {
     });
 
     describe("fire", function () {
-      var fire = require("../game_logic/shop_methods").fire;
+      var fire = require("../game_logic/ship_methods").fire;
     
       it("should record damage on a given players ship at a given coordinate", function () {
         var player = {
