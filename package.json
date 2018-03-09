@@ -1,17 +1,17 @@
 {
   "name": "battleship",
   "version": "1.0.0",
-  "description": "A battleship is a large armored warship with a main battery consisting of large caliber guns. During the late 19th and early 20th centuries the battleship was the most powerful type of warship, and a fleet of battleships was considered vital for any nation that desired to maintain command of the sea.",
+  "description": "A battleship is a large armored warship with a main battery consisting of large caliber guns.",
   "main": "index.js",
   "dependencies": {
     "chai": "^4.1.2",
+    "mocha": "^4.1.0",
     "mocha-junit-reporter": "^1.17.0"
   },
-  "devDependencies": {
-    "mocha": "^4.1.0"
-  },
   "scripts": {
-    "test": "mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test_results/results.xml"
+    "test": "mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test_results/results.xml",
+    "dev": "webpack --config webpack.config.js --mode development",
+    "build": "webpack --config webpack.config.prod.js --mode production"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/Hugur-vefskolinn/Battleship/issues"
   },
-  "homepage": "https://github.com/Hugur-vefskolinn/Battleship#readme"
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "compression-webpack-plugin": "^1.1.11",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.10"
+  }
 }
