@@ -10,7 +10,7 @@
     "mocha": "^5.0.3"
   },
   "scripts": {
-    "test": "mocha test --reporter mocha-unit-reporter --reporter-options mochaFile=./test/test_results/results.xml"
+    "test": "mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=/test/test_results/results.xml"
   
   },
   "repository": {
