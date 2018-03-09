@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 
 describe('checkForShip', function () {
-	var checkForShip = require('../game_logic/ship_methods').checkForShip;
+	var checkForShip = require('../src/game_logic/ship_methods').checkForShip;
 
 	it('should correctly report no ship at a given players coordinate', function () {
 		player = {
@@ -69,7 +69,7 @@ describe('checkForShip', function () {
 });
 
 describe('damageShip', function () {
-	var damageShip = require('../game_logic/ship_methods').damageShip;
+	var damageShip = require('../src/game_logic//ship_methods').damageShip;
 
 	it('should register damage on a given ship at a given location', function () {
 		var ship = {
@@ -85,7 +85,7 @@ describe('damageShip', function () {
 });
 
 describe('fire', function () {
-	var fire = require('../game_logic/ship_methods').fire;
+	var fire = require('../src/game_logic/ship_methods').fire;
 
 	it('should record damage on the given players ship at a given coordinate', function () {
 		var player = {
