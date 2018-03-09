@@ -20,10 +20,10 @@ function damageShip (ship, coordinates) {
 	ship.damage.push(coordinates);
 }
 
-function fire (player, coordinates) {
+function fire(player, coordinates) {
 	var ship = checkForShip(player, coordinates);
-
 	if (ship) {
+
 		damageShip(ship, coordinates);
 	}
 }
