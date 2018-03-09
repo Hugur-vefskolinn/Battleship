@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.007" tests="7" failures="0">
-  <testsuite name="Root Suite" timestamp="2018-03-09T14:51:04" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.003" tests="7" failures="0">
+  <testsuite name="Root Suite" timestamp="2018-03-09T16:00:15" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="checkForShip" timestamp="2018-03-09T14:51:04" tests="4" file="/Users/mikkikalla/Desktop/TREE/JS-UNIT/Battleship/test/ship_test.js" failures="0" time="0.004">
+  <testsuite name="checkForShip" timestamp="2018-03-09T16:00:15" tests="4" file="/Users/mikkikalla/Desktop/TREE/JS-UNIT/Battleship/test/ship_test.js" failures="0" time="0.002">
     <testcase name="checkForShip should correctly report no ship at a given players coordinate" time="0.002" classname="should correctly report no ship at a given players coordinate">
     </testcase>
-    <testcase name="checkForShip should correctly report a ship located at the given coordinates" time="0.001" classname="should correctly report a ship located at the given coordinates">
+    <testcase name="checkForShip should correctly report a ship located at the given coordinates" time="0" classname="should correctly report a ship located at the given coordinates">
     </testcase>
     <testcase name="checkForShip should handle ships located at more than one coordinate" time="0" classname="should handle ships located at more than one coordinate">
     </testcase>
-    <testcase name="checkForShip should handle checking multiple ships" time="0.001" classname="should handle checking multiple ships">
+    <testcase name="checkForShip should handle checking multiple ships" time="0" classname="should handle checking multiple ships">
     </testcase>
   </testsuite>
-  <testsuite name="damageShip" timestamp="2018-03-09T14:51:04" tests="1" file="/Users/mikkikalla/Desktop/TREE/JS-UNIT/Battleship/test/ship_test.js" failures="0" time="0.002">
-    <testcase name="damageShip should register damage on a given ship at a given location" time="0.002" classname="should register damage on a given ship at a given location">
+  <testsuite name="damageShip" timestamp="2018-03-09T16:00:15" tests="1" file="/Users/mikkikalla/Desktop/TREE/JS-UNIT/Battleship/test/ship_test.js" failures="0" time="0.001">
+    <testcase name="damageShip should register damage on a given ship at a given location" time="0.001" classname="should register damage on a given ship at a given location">
     </testcase>
   </testsuite>
-  <testsuite name="fire" timestamp="2018-03-09T14:51:04" tests="2" file="/Users/mikkikalla/Desktop/TREE/JS-UNIT/Battleship/test/ship_test.js" failures="0" time="0.001">
-    <testcase name="fire should record damage on the given players ship at a given coordinate" time="0.001" classname="should record damage on the given players ship at a given coordinate">
+  <testsuite name="fire" timestamp="2018-03-09T16:00:15" tests="2" file="/Users/mikkikalla/Desktop/TREE/JS-UNIT/Battleship/test/ship_test.js" failures="0" time="0">
+    <testcase name="fire should record damage on the given players ship at a given coordinate" time="0" classname="should record damage on the given players ship at a given coordinate">
     </testcase>
     <testcase name="fire should NOT record damage if there is no ship at my coordinates" time="0" classname="should NOT record damage if there is no ship at my coordinates">
     </testcase>
