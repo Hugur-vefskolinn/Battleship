@@ -36,7 +36,11 @@ jobs:
       # run tests!
       - run: npm test
       - store_test_results:
-          path: ../test/test_results
+          path: test/test-results
+          - store_artifacts:
+          path: /test/test-results
+          destination: prefix
+
 
 
 
